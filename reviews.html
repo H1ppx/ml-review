@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Algorithms - Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Machine Learning Algorithms</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="pictorial.html">Pictorial</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="reviews">
+        <h2>Reviews</h2>
+        
+        <div class="review">
+            <h3>Review of Linear Regression</h3>
+            <p><strong>Brief Summary:</strong> Linear regression is a statistical method used for modeling the relationship between a dependent variable Y and one or more independent variables X. It assumes a linear relationship between the variables and aims to find the best-fitting straight line through the data points. This technique is widely used in various fields, including economics, finance, and social sciences, for predicting outcomes and understanding the underlying relationships in the data.</p>
+            <p><strong>When to Use:</strong> Linear regression is suitable for predicting continuous outcomes and understanding the relationship between variables when the relationship is assumed to be linear.</p>
+            <p><strong>Easiness of Implementation:</strong> Linear regression is relatively easy to implement and interpret, making it a good choice for beginners and for situations where interpretability is important. However, it may not perform well with non-linear data and is sensitive to outliers.</p>
+            
+            <div class="pseudo-code">
+                <h4>Pseudo Code for Linear Regression:</h4>
+                <pre>
+                    <code>
+                        // Pseudo code for linear regression algorithm
+                        Initialize weights randomly: &theta;
+                        Set learning rate: &alpha;
+                        Repeat until convergence:
+                            Calculate predicted values: h(&theta;) = &theta;<sub>0</sub> + &theta;<sub>1</sub>X;
+                            Calculate error: J(&theta;) = (1/2m) &sum;[h(&theta;)(X<sup>(i)</sup>) - Y<sup>(i)</sup>]<sup>2</sup>;
+                            Update weights based on error and learning rate: &theta;<sub>j</sub> := &theta;<sub>j</sub> - &alpha; &part;J(&theta;)/&part;&theta;<sub>j</sub>;
+                    </code>
+                </pre>
+            </div>
+            <img src="gifs/linear-regression.gif" alt="Linear Regression GIF">
+        </div>
+        
+        <div class="review">
+            <h3>Review of K-Means Clustering</h3>
+            <p><strong>Brief Summary:</strong> K-means clustering is an unsupervised machine learning algorithm used for partitioning data into clusters based on similarity. It aims to group similar data points together and separate dissimilar ones. The algorithm iteratively assigns data points to the nearest cluster centroid and updates the centroids until convergence. K-means clustering is widely used in various applications, such as customer segmentation, image processing, and anomaly detection.</p>
+            <p><strong>When to Use:</strong> K-means clustering is suitable for partitioning data into clusters when the number of clusters is known and the clusters have similar sizes and spherical shapes.</p>
+            <p><strong>Easiness of Implementation:</strong> K-means clustering is relatively easy to implement and computationally efficient, making it suitable for large datasets. However, it requires specifying the number of clusters in advance and may not perform well with non-linear data or when the clusters have varying sizes.</p>
+            
+            <div class="pseudo-code">
+                <h4>Pseudo Code for K-Means Clustering:</h4>
+                <pre>
+                    <code>
+                        // Pseudo code for k-means clustering algorithm
+                        Randomly initialize cluster centroids: &mu;<sub>1</sub>, &mu;<sub>2</sub>, ..., &mu;<sub>k</sub>;
+                        Repeat until convergence:
+                            Assign data points to the nearest centroid: c<sup>(i)</sup> := arg min<sub>k</sub> ||X<sup>(i)</sup> - &mu;<sub>k</sub>||<sup>2</sup>;
+                            Update centroids based on assigned data points: &mu;<sub>k</sub> := (1/|c<sub>k</sub>|) &sum;{X<sup>(i)</sup> : c<sup>(i)</sup> = k};
+                    </code>
+                </pre>
+            </div>
+            <img src="gifs/k-means.gif" alt="Linear Regression GIF">
+        </div>
+        
+    </section>
+
+</body>
+</html>
