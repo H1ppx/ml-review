@@ -105,3 +105,25 @@ footer {
     margin: 0 auto; /* Center the images horizontally */
     max-width: 100%; /* Ensure images don't exceed parent width */
 }
+
+.models {
+    text-align: center; /* Center align the content */
+    max-width: 800px; /* Set maximum width */
+    margin: 0 auto; /* Center the section horizontally */
+}
+.models h2 {
+    margin-bottom: 20px; /* Add space below the title */
+}
+.model-group {
+    margin-bottom: 40px; /* Add space between model groups */
+}
+.image-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    grid-gap: 20px; /* Add gap between grid items */
+    justify-items: center; /* Center items horizontally within grid cells */
+}
+.image-grid img {
+    max-width: 100%; /* Ensure images don't exceed parent width */
+    border-radius: 10px; /* Add rounded corners to images */
+}
