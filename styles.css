@@ -127,3 +127,23 @@ footer {
     max-width: 100%; /* Ensure images don't exceed parent width */
     border-radius: 10px; /* Add rounded corners to images */
 }
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo-container img {
+    margin-right: 10px; /* Add space between logo and text */
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
