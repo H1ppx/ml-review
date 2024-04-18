@@ -147,3 +147,19 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Add border around the map */
+#map {
+    height: 400px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+/* Add horizontal and vertical lines to represent axes */
+.leaflet-overlay-pane svg {
+    overflow: visible !important;
+}
+.leaflet-interactive {
+    stroke: black;
+    stroke-width: 1px;
+}
