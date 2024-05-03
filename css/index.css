@@ -25,7 +25,7 @@
 }
 
 .item {
-    background-color: #fff;
+    background-color: #f6f6f6; /* Light gray */
     border-radius: 10px;
     margin-right: 20px;
     padding: 20px;
@@ -52,4 +52,40 @@
     font-size: 16px;
     line-height: 1.5;
     color: #555;
+}
+
+
+.study-websites {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    max-width: 1000px; /* Constrain the width to 1000px */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+/* Style for website items */
+.study-websites .website {
+    display: flex;
+    text-decoration: none;
+    color: #333; /* Dark gray */
+    transition: color 0.3s; /* Adjust transition property */
+    margin-bottom: 20px; /* Add margin between items */
+    padding: 20px; /* Add padding to the content */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Lighten the text and box on hover */
+.study-websites .website:hover {
+    color: #666; /* Light gray */
+}
+
+/* Darken the textbox on hover */
+.study-websites .website:hover::before {
+    content: ''; /* Empty content for the pseudo-element */
+    flex: 0 0 8px; /* Width of the line */
+    background-color: rgba(0, 0, 0, 0.1); /* Darken the background */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px; /* Spacing between line and content */
 }

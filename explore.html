@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graph Points</title>
-    <!-- Include Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <!-- Include your custom stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Exploration</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        /* Your additional CSS styles here */
+    </style>
 </head>
 <body>
     <header>
-        <h1>Machine Learning Algorithms</h1>
+        <div class="logo-container">
+            <a href="index.html">
+                <!-- SVG logo with approximately 32px height -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 32" height="32">
+                    <!-- Your custom logo SVG content here -->
+                </svg>
+            </a>
+            <div class="site-title">
+                <h1>Machine Learning Adventures</h1> <!-- Site name -->
+                <h1>Exploration</h1> <!-- Title of the webpage -->
+            </div>
+            <button class="open-panel-btn">&#9776;</button> <!-- Button to open side panel -->
+        </div>
+    </header>
+
+    <div class="side-panel">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,7 +37,7 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
 
     <!-- Add a div to contain the Leaflet map -->
     <div id="map"></div>
@@ -53,5 +69,11 @@
         var verticalLine = L.polyline([[-Infinity, 0], [Infinity, 0]], {color: 'black'}).addTo(map);
 
     </script>
+
+    <footer class="footer">
+        <p>&copy; 2024 Computer Aided Design. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/nav.js" defer></script>
 </body>
 </html>
