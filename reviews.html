@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Learning Algorithms - Reviews</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reviews.css">
 </head>
 <body>
     <header>
-        <h1>Machine Learning Algorithms</h1>
+        <div class="logo-container">
+            <a href="index.html">
+                <!-- SVG logo with approximately 32px height -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 32" height="32">
+                    <!-- Your custom logo SVG content here -->
+                </svg>
+            </a>
+            <div class="site-title">
+                <h1>Machine Learning Adventures</h1> <!-- Site name -->
+                <h1>Reviews</h1> <!-- Title of the webpage -->
+            </div>
+            <button class="open-panel-btn">&#9776;</button> <!-- Button to open side panel -->
+        </div>
+    </header>
+
+    <div class="side-panel">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,56 +34,77 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
 
     <section class="reviews">
-        <h2>Reviews</h2>
-
         <div class="review">
-            <h3>Review of Linear Regression</h3>
-            <p><strong>Brief Summary:</strong> Linear regression is a statistical method used for modeling the relationship between a dependent variable Y and one or more independent variables X. It assumes a linear relationship between the variables and aims to find the best-fitting straight line through the data points. This technique is widely used in various fields, including economics, finance, and social sciences, for predicting outcomes and understanding the underlying relationships in the data.</p>
-            <p><strong>When to Use:</strong> Linear regression is suitable for predicting continuous outcomes and understanding the relationship between variables when the relationship is assumed to be linear.</p>
-            <p><strong>Easiness of Implementation:</strong> Linear regression is relatively easy to implement and interpret, making it a good choice for beginners and for situations where interpretability is important. However, it may not perform well with non-linear data and is sensitive to outliers.</p>
-
+            <h3>Linear Regression</h3>
+            <p><strong>My Thoughts:</strong> Before diving into the technicalities, let me share my personal experience with linear regression. I've employed this powerful tool in various projects, from analyzing housing market trends to predicting stock prices. Its versatility and reliability have consistently impressed me, making it my go-to method for understanding the relationships between variables.</p>
+            <p><strong>Brief Summary:</strong> Let me take you on a journey through the fascinating world of linear regression. Imagine yourself in a bustling marketplace, surrounded by vendors selling goods of all kinds. Linear regression is like the wise old merchant who can predict the price of an item based on its weight, size, and other factors. Just as the merchant can estimate the value of a rare gem, linear regression helps us understand the relationship between variables and make predictions with confidence.</p>
+            <p><strong>When to Use:</strong> Linear regression is your trusted guide when exploring the paths of continuous data. Whether you're navigating the twists and turns of economic trends or deciphering the patterns in a sea of numbers, linear regression shines a light on the journey ahead. When the road ahead seems straight and clear, linear regression is your steadfast companion.</p>
+            <p><strong>Easiness of Implementation:</strong> Embark on your linear regression adventure with ease! Like a well-worn map, linear regression provides a clear path to understanding. Its simplicity and interpretability make it the perfect starting point for beginners and seasoned travelers alike. But beware! Just as a hidden boulder can disrupt a peaceful voyage, outliers and non-linear data may challenge your journey. Stay vigilant, and let linear regression guide you to your destination!</p>
             <div class="pseudo-code">
-                <h4>Pseudo Code for Linear Regression:</h4>
-                <pre>
-                    <code>
-                        // Pseudo code for linear regression algorithm
-                        Initialize weights randomly: &theta;
-                        Set learning rate: &alpha;
-                        Repeat until convergence:
-                            Calculate predicted values: h(&theta;) = &theta;<sub>0</sub> + &theta;<sub>1</sub>X;
-                            Calculate error: J(&theta;) = (1/2m) &sum;[h(&theta;)(X<sup>(i)</sup>) - Y<sup>(i)</sup>]<sup>2</sup>;
-                            Update weights based on error and learning rate: &theta;<sub>j</sub> := &theta;<sub>j</sub> - &alpha; &part;J(&theta;)/&part;&theta;<sub>j</sub>;
-                    </code>
-                </pre>
+                <pre><code>
+                    // Pseudo code for linear regression algorithm
+                    1. Initialize weights randomly.
+                    2. Set the learning rate.
+                    3. Repeat until convergence:
+                        a. Calculate predicted values.
+                        b. Calculate error.
+                        c. Update weights based on error and learning rate.
+                </code></pre>
             </div>
             <img src="gifs/linear-regression.gif" alt="Linear Regression GIF">
         </div>
 
+
         <div class="review">
-            <h3>Review of K-Means Clustering</h3>
-            <p><strong>Brief Summary:</strong> K-means clustering is an unsupervised machine learning algorithm used for partitioning data into clusters based on similarity. It aims to group similar data points together and separate dissimilar ones. The algorithm iteratively assigns data points to the nearest cluster centroid and updates the centroids until convergence. K-means clustering is widely used in various applications, such as customer segmentation, image processing, and anomaly detection.</p>
-            <p><strong>When to Use:</strong> K-means clustering is suitable for partitioning data into clusters when the number of clusters is known and the clusters have similar sizes and spherical shapes.</p>
-            <p><strong>Easiness of Implementation:</strong> K-means clustering is relatively easy to implement and computationally efficient, making it suitable for large datasets. However, it requires specifying the number of clusters in advance and may not perform well with non-linear data or when the clusters have varying sizes.</p>
+            <h3>K-Means Clustering</h3>
+            <p><strong>My Thoughts:</strong> Having delved into the realm of K-Means Clustering in various projects, I find it to be an indispensable tool in uncovering hidden structures within datasets. Its ability to partition data into clusters based on similarity has proven invaluable, whether I'm exploring customer segmentation strategies or analyzing image datasets for pattern recognition. The intuitive nature of K-Means clustering makes it accessible to both beginners and experienced data scientists, offering a straightforward approach to understanding complex data landscapes.</p>
+            <p><strong>Brief Summary:</strong> Welcome to the world of K-Means Clustering! Picture yourself exploring a vast landscape filled with diverse landmarks. K-Means clustering acts as your trusty guide, grouping similar landmarks together and helping you navigate through the terrain. Just as a skilled cartographer maps out the landscape, K-Means clustering partitions your data into clusters, each with its own unique identity.</p>
+            <p><strong>When to Use:</strong> K-Means clustering is your go-to companion when you're faced with a sea of uncharted data. Whether you're exploring the galaxies of customer preferences or diving into the depths of image analysis, K-Means clustering sheds light on hidden patterns and structures. When the data landscape calls for organization and exploration, K-Means clustering answers with precision and insight.</p>
+            <p><strong>Easiness of Implementation:</strong> Embark on your K-Means adventure with confidence! Like a seasoned explorer equipped with a reliable compass, K-Means clustering offers simplicity and efficiency. Its straightforward approach and computational efficiency make it an ideal choice for tackling large datasets. However, be prepared to choose the number of clusters wisely, as navigating through non-linear data and varied cluster sizes may present challenges along the way.</p>
 
             <div class="pseudo-code">
-                <h4>Pseudo Code for K-Means Clustering:</h4>
-                <pre>
-                    <code>
-                        // Pseudo code for k-means clustering algorithm
-                        Randomly initialize cluster centroids: &mu;<sub>1</sub>, &mu;<sub>2</sub>, ..., &mu;<sub>k</sub>;
-                        Repeat until convergence:
-                            Assign data points to the nearest centroid: c<sup>(i)</sup> := arg min<sub>k</sub> ||X<sup>(i)</sup> - &mu;<sub>k</sub>||<sup>2</sup>;
-                            Update centroids based on assigned data points: &mu;<sub>k</sub> := (1/|c<sub>k</sub>|) &sum;{X<sup>(i)</sup> : c<sup>(i)</sup> = k};
-                    </code>
-                </pre>
+                <pre><code>
+                    // Pseudo code for k-means clustering algorithm
+                    1. Begin by randomly placing K centroids in the data space.
+                    2. Repeat until convergence:
+                        a. Assign each data point to the nearest centroid.
+                        b. Update the centroids to the mean of the data points assigned to them.
+                </code></pre>
             </div>
-            <img src="gifs/k-means.gif" alt="Linear Regression GIF">
+
+            <img src="gifs/k-means.gif" alt="K-Means Clustering GIF">
+        </div>
+
+        <div class="review">
+            <h3>Decision Trees</h3>
+            <p><strong>My Thoughts:</strong> Decision trees serve as the cornerstone of interpretability in machine learning, offering a transparent framework for decision-making. Throughout my journey with decision trees, I've found them to be incredibly intuitive and insightful, providing clear paths to understanding complex data patterns. Whether I'm exploring classification problems or delving into regression tasks, decision trees offer a robust methodology for dissecting and interpreting data.</p>
+            <p><strong>Brief Summary:</strong> Imagine navigating through a dense forest, each fork in the road representing a critical decision point. Decision trees mirror this process, systematically branching out based on feature values to arrive at a final outcome. Just as a skilled guide directs you through the twists and turns of the wilderness, decision trees guide us through the intricacies of data analysis, offering clarity amidst complexity.</p>
+            <p><strong>When to Use:</strong> Decision trees are invaluable when seeking to understand the underlying structure of a dataset or when interpretability is paramount. Whether you're classifying spam emails or predicting customer churn, decision trees excel at capturing decision boundaries in a transparent and interpretable manner. When transparency, simplicity, and insight are essential, decision trees stand out as a reliable choice.</p>
+            <p><strong>Easiness of Implementation:</strong> Embark on your decision tree journey with confidence! Like a well-marked trail through the forest, decision trees provide a clear and structured approach to data analysis. Their intuitive nature and ease of interpretation make them accessible to data enthusiasts of all levels, from beginners to seasoned professionals. However, be mindful of overfitting in complex datasets, as decision trees may struggle to capture intricate relationships without proper pruning.</p>
+
+            <div class="pseudo-code">
+                <pre><code>
+                    // Pseudo code for decision tree algorithm
+                    1. Select the best attribute to split the data.
+                    2. Split the data into subsets based on the selected attribute.
+                    3. Repeat recursively for each subset until one of the following conditions is met:
+                        a. All instances in the subset belong to the same class.
+                        b. No more attributes to split on.
+                </code></pre>
+            </div>
+
+            <img src="gifs/decision-tree.gif" alt="Decision Tree GIF">
         </div>
 
     </section>
 
+    <footer class="footer">
+        <p>&copy; 2024 Computer Aided Design. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/nav.js" defer></script>
 </body>
 </html>

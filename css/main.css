@@ -1,0 +1,101 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Set base font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    background-color: #141414; /* Dark background color */
+    color: #fff;
+    padding: 20px;
+    position: relative; /* Add relative positioning */
+}
+
+.site-title h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White text color */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Button to open side panel */
+.open-panel-btn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s; /* Smooth transition for animation */
+    position: absolute; /* Position the button absolutely */
+    top: 20px; /* Adjust top position */
+    left: 20px; /* Adjust left position */
+}
+
+.open-panel-btn:hover {
+    transform: translateX(10px); /* Move button to the right on hover */
+}
+
+/* Side panel styles */
+.side-panel {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hide the side panel */
+    width: 250px;
+    height: 100%;
+    background-color: #1f1f1f; /* Dark background color */
+    transition: left 0.3s; /* Smooth transition for opening/closing */
+    z-index: 1000; /* Ensure side panel appears on top */
+}
+
+.side-panel nav {
+    padding-top: 20px;
+}
+
+.side-panel ul {
+    list-style-type: none;
+}
+
+.side-panel li {
+    margin-bottom: 10px;
+}
+
+.side-panel a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.side-panel a:hover {
+    background-color: #1f1f1f; /* Darker background color on hover */
+}
+
+footer {
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+}
+
+

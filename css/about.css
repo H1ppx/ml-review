@@ -1,0 +1,54 @@
+/* About section */
+.about {
+    text-align: center; /* Center align all content */
+    background-color: #f5f5f5; /* Light background color */
+    padding: 40px 20px; /* Add padding */
+}
+
+.about-intro {
+    background-color: #ffffff; /* White background color */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Add margin between containers */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    text-align: center; /* Center align all content */
+    max-width: 400px; /* Limit the width of each container */
+    margin: 0 auto 20px; /* Center the container horizontally and add margin at the bottom */
+}
+
+
+/* About container */
+.about-container {
+    background-color: #ffffff; /* White background color */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Add margin between containers */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    text-align: center; /* Center align all content */
+    max-width: 400px; /* Limit the width of each container */
+    margin: 0 auto 20px; /* Center the container horizontally and add margin at the bottom */
+}
+
+/* About content */
+.about-content {
+    text-align: center; /* Center align text */
+}
+
+.about-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333333; /* Text color */
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666666; /* Text color */
+}
+
+/* Images */
+.about-container img {
+    border-radius: 50%; /* Round image corners */
+    display: block; /* Make image block-level */
+    margin: 0 auto 20px; /* Center image horizontally and add margin at the bottom */
+}

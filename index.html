@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Learning Algorithms</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
@@ -15,9 +16,16 @@
                     <!-- Your custom logo SVG content here -->
                 </svg>
             </a>
-            <h1>Machine Learning Algorithms</h1>
+            <div class="site-title">
+                <h1>Machine Learning Adventures</h1> <!-- Site name -->
+                <h1>Home</h1> <!-- Title of the webpage -->
+            </div>
+            <button class="open-panel-btn">&#9776;</button> <!-- Button to open side panel -->
         </div>
-        <nav>
+    </header>
+
+    <div class="side-panel">
+        <nav>a
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
@@ -26,13 +34,16 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+
     <section class="introduction">
-        <div class="introduction-content">
-            <p>Whether you're new to the field or a seasoned practitioner, this site offers insights into the foundational techniques and advanced methods that power modern artificial intelligence. Explore our showcase below to learn more about key algorithms shaping the future of technology.</p>
-        </div>
+        <p>Whether you're just stepping into the world of artificial intelligence or already seasoned in the field, this platform is tailored to provide insights into both the basics and advanced techniques driving modern AI. Let's embark on a journey through our showcase, meticulously crafted to demystify the core algorithms shaping the future of technology. From fundamental principles to sophisticated methodologies, each algorithm showcased here embodies innovation and holds the potential to redefine the technological landscape. Explore these insights to deepen your understanding of AI's inner workings and unlock its transformative power. Let's dive in and discover the secrets of artificial intelligence together!</p>
     </section>
-    <h2>Showcase</h2>
+
+    <h2 style="text-align: center;">Showcase</h2>
+    <section class="introduction">
+        <p>Explore a curated selection of cutting-edge machine learning algorithms in our Showcase section, highlighting their applications and impact. For a deeper dive into specific techniques and real-world examples, visit our Review or Pictorial pages.</p>
+    </section>
     <section class="showcase">
         <div class="item">
             <h3>Linear Regression</h3>
@@ -51,8 +62,12 @@
         </div>
     </section>
 
+
+
     <footer class="footer">
         <p>&copy; 2024 Computer Aided Design. All rights reserved.</p>
     </footer>
+
+    <script src="javascript/nav.js" defer></script>
 </body>
 </html>

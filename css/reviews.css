@@ -1,0 +1,56 @@
+/* Styles for reviews section */
+.reviews {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.review {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.review h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Styles for pseudo-code */
+.pseudo-code {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pseudo-code h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pseudo-code pre {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    border-radius: 5px;
+
+}
+
+.review img {
+    display: block;
+    margin: 0 auto;
+}
