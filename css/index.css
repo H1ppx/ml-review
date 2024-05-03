@@ -12,33 +12,33 @@
     line-height: 1.5;
     color: #333;
 }
-
 /* Showcase section */
 .showcase {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
-    margin: 20px auto; /* Center the showcase horizontally */
+    margin: 20px auto 50px; /* Center the showcase horizontally and add space below */
     max-width: 1000px; /* Constrain the width to 1000px */
-    overflow-x: auto;
-    white-space: nowrap;
+    display: flex; /* Use flexbox for item alignment */
+    justify-content: space-between; /* Distribute space between items */
 }
 
 .item {
     background-color: #f6f6f6; /* Light gray */
     border-radius: 10px;
-    margin-right: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    vertical-align: top;
-    height: 300px; /* Adjust the height here */
-    overflow: hidden; /* Hide overflow content */
+    flex: 1; /* Equal width for each item */
+    margin-right: 20px; /* Add space between items */
+}
+
+.item:last-child {
+    margin-right: 0; /* Remove margin for the last item */
 }
 
 .item img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure image fills its container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
 
@@ -52,7 +52,9 @@
     font-size: 16px;
     line-height: 1.5;
     color: #555;
+    margin-bottom: 15px; /* Add space below the paragraph */
 }
+
 
 
 .study-websites {
