@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploration</title>
+    <title>About the Team</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
-        /* Your additional CSS styles here */
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+        #reset-btn {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -21,7 +28,7 @@
             </a>
             <div class="site-title">
                 <h1>Machine Learning Adventures</h1> <!-- Site name -->
-                <h1>Exploration</h1> <!-- Title of the webpage -->
+                <h1>About the Team</h1> <!-- Title of the webpage -->
             </div>
             <button class="open-panel-btn">&#9776;</button> <!-- Button to open side panel -->
         </div>
@@ -40,41 +47,15 @@
         </nav>
     </div>
 
-    <!-- Add a div to contain the Leaflet map -->
     <div id="map"></div>
-
-    <!-- Include Leaflet JavaScript -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        // Initialize Leaflet map without setting a specific geographical location
-        var map = L.map('map').setView([0, 0], 2); // Centered around [0, 0] with zoom level 2
-
-        // Remove default background
-        map.getContainer().style.background = 'none';
-
-        // Function to add marker on click
-        function addMarker(lat, lng) {
-            // Add marker to the map
-            L.circleMarker([lat, lng], {radius: 5}).addTo(map);
-        }
-
-        // Add event listener to the map to add marker on click
-        map.on('click', function(e) {
-            var lat = e.latlng.lat.toFixed(2);
-            var lng = e.latlng.lng.toFixed(2);
-            addMarker(lat, lng);
-        });
-
-        // Add horizontal and vertical axis lines
-        var horizontalLine = L.polyline([[0, -Infinity], [0, Infinity]], {color: 'black'}).addTo(map);
-        var verticalLine = L.polyline([[-Infinity, 0], [Infinity, 0]], {color: 'black'}).addTo(map);
-
-    </script>
+    <button id="reset-btn">Reset</button>
 
     <footer class="footer">
         <p>&copy; 2024 Computer Aided Design. All rights reserved.</p>
     </footer>
 
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="javascript/nav.js" defer></script>
+    <script src="javascript/map.js" defer></script>
 </body>
 </html>
